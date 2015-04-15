@@ -54,6 +54,7 @@ h2, h3, h4, h5 {
   font-size: 14px;
   color: #999999;
   line-height: 16px;
+   padding-left: 5%;
   float: left;
 }
 
@@ -62,6 +63,7 @@ h2, h3, h4, h5 {
   font-size: 14px;
   color: #999999;
   line-height: 16px;
+   padding-left: 5%;
   float: right;
 
 }
@@ -70,6 +72,7 @@ p {
   font-size: 14px;
   color: #333333;
   line-height: 21px;
+   padding-left: 5%;
 }
 
 a {
@@ -212,4 +215,8 @@ span {
   .biopic {
     display: block;
   }
+}
+
+.spectrumHeader  {
+    transition: color 4s ease; 
 }

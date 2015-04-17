@@ -20,7 +20,7 @@ var bio = {
  ],
 	
 	 "skills" : [ 
- 	"Programming", "JS", "Android", "Engineering", "CAD","Rapid Prototyping", "Excel"
+ 	"Programming", "JS", "Android", "Engineering", "CAD","Front End Web Development", "VBA"
 	],
 	"pictureURL" : "images/Dymock.JPG"
 };
@@ -106,7 +106,7 @@ var projects = {
 		"title" : "Dipper Configurator",
 		"dates" : "April 2014 - August 2014",
 		"description" : "Developed Automation tools needed to reduce Dipper Bucket Engineering Time from 84 days to 5 days.",
-		"images" : ["images/dipper_small.png","images/dragline.png"]
+		"images" : ["images/dipper_small.png","images/dragline.png","images/actual_dipper.png"]
 	},
 	{ 
 		"title" : "ESCO RFQ demo app",
@@ -115,9 +115,9 @@ var projects = {
 		"images" : ["images/RFQ_small.JPG","images/rfq.png"]
 	},
 	{ 
-		"title" : "Cycle Time and Density Prototype App",
+		"title" : "Mining Data Collection Prototype App",
 		"dates" : "January 2015-February 2015",
-		"description" : "Developed a prototype Android Application to log Cycle Time and calculate Material Density.",
+		"description" : "Developed a prototype Android Application for mine site Data Collection.",
 		"images" : ["images/truck_icon.png","images/cycle_time_app.png"]
 	},
 	{ 
@@ -138,16 +138,17 @@ projects.display = function(){
 		var projectTitle = HTMLprojectTitle.replace("%data%",projectToDisplay.title);
 		var projectDates = HTMLprojectDates.replace("%data%",projectToDisplay.dates);
 		var projectDescription = HTMLprojectDescription.replace("%data%",projectToDisplay.description);
-				
-		$(".project-entry:last").append(HTMLprojectStart);
+
 		$(".project-entry:last").append(projectTitle);
 		$(".project-entry:last").append(projectDates);
 		$(".project-entry:last").append(projectDescription);
 		
 		if(projectToDisplay.images.length > 0){
+			$(".project-entry:last").append(HTMLbxSlider);
 			for(image in projectToDisplay.images){
+				$(".bxslider:last").append(HTMLbxSliderLi);	
 				var projectImage = HTMLprojectImage.replace("%data%",projectToDisplay.images[image]);
-				$(".project-entry:last").append(projectImage);			
+				$("li:last").append(projectImage);			
 			}
 		}
 		

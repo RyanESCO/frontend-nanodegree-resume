@@ -23,20 +23,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  
+  <!-- BxSlider CSS -->
+<link href="js/external/bxslider/jquery.bxslider.css" rel="stylesheet" />
 
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
+  <!-- FlexSlider CSS -->
+  <link href="js/external/flexslider/flexslider.css" rel="stylesheet" />
 
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  -->
   <script src="js/jQuery.js"></script>
 
   <!-- More on helper.js in the class -->
@@ -137,6 +130,22 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   </script>
   
  <script src="js/jquery.spectrum.js"></script>
+ 
+ <script src="js/external/bxslider/jquery.bxslider.min.js"></script>
+ 
+ <script>
+  $('.bxslider').bxSlider({
+	  adaptiveHeight: true,
+	  minSlides: 1,
+	  maxSlides: 1,
+	  slideWidth: 300
+});
+ </script>
+ 
+  <script src="js/external/flexslider/jquery.flexslider-min.js"></script>
+  
+  
+
  
 </body>
 </html>

@@ -8,9 +8,17 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.work-entry{
+  padding-left: 5%;
+  padding-right: 5%;	
+}
+
+.education-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 h1 {
@@ -219,4 +227,9 @@ span {
 
 .spectrumHeader  {
     transition: color 4s ease; 
+}
+
+.sliderProjectImage {
+margin-top:auto;
+margin-bottom:auto;	
 }
